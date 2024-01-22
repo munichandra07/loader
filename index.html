@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+.loader{
+  display:flex;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition:all 0.4s;
+}
+.loader div{
+  width:7px;
+  height:60px;
+  margin-left:5px;
+  border-radius: 50px;
+}
+.load1{
+  background:#4285F4;
+  animation:scale 1s infinite;
+  animation-delay:0.1s;
+}
+.load2{
+  background:#DB4437;
+  animation:scale 1s infinite;
+  animation-delay:0.2s;
+}
+.load3{
+  background:#90f542;
+  animation:scale 1s infinite;
+  animation-delay:0.3s;
+}
+.load4{
+  background:#0F9D58;
+  animation:scale 1s infinite;
+  animnation-delay:0.4s;
+}
+@keyframes scale{
+  0%,
+  40%,
+  100%{
+    transform: scaleY(0.1);
+  }
+  20%{
+    transform: scaleY(1);
+  }
+}
+</style>
+</head>
+<body>
+    <div class="loader">
+      <div class="load1"></div>
+      <div class="load2"></div>
+      <div class="load3"></div>
+      <div class="load4"></div>
+    </div>
+            
+</body>
+</html>
